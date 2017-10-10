@@ -22,8 +22,7 @@ contract HelloWorldContract {
     function setWord(string newWord) ifIssuer public returns(string) {
         if (issuer != msg.sender) {
             return "Вы не создатель!";
-        }
-        else {
+        } else {
             word = newWord;
             return "Вы создатель!";
         }
