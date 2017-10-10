@@ -1,1 +1,1 @@
-# My slall solidity-examples
+# My small solidity-examples
