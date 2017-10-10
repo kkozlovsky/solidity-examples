@@ -1,0 +1,21 @@
+geth --dev --rpc --rpcaddr "0.0.0.0" --rpcapi "admin,debug,miner,shh,txtpool,personal,eth,net,web3" console
+Теперь можно связываться с локальным блокчейном
+
+Создаём аккаунт
+personal.newAccount("123")
+
+Список аккаунтов
+eth.accounts
+
+Список аккаунтов для майнинга
+eth.coinbase
+
+Узнать баланс аккаунта
+eth.getBalance(eth.coinbase)
+
+Установить аккаунт в качестве аккаунта для майнинга
+miner.setEtherbase(eth.accounts[0])
+
+
+Запустить mist через коммандную строку
+mist.exe --rpc http://localhost:8545
