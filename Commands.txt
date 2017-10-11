@@ -18,4 +18,11 @@ miner.setEtherbase(eth.accounts[0])
 
 
 Запустить mist через коммандную строку
+cd C:\\Program Files\\Mist
 mist.exe --rpc http://localhost:8545
+
+Инициализировать свой приватный blockchain из genesis.json
+geth --datadir=./chaindata/ init ./genesis.json
+
+Стартовать P2P сеть и открыть IPC endpoint
+geth --datadir=./chaindata/
